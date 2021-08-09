@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "########## Starting bootstrapping $HOSTNAME ##########"
 
 echo "[BOOTSTRAP TASK 1] Setup basic node configs"
 
@@ -62,4 +62,4 @@ sudo systemctl enable kubelet.service
 
 # add ccount to the docker group
 usermod -aG docker vagrant
-echo "########## Completed bootstrapping the node ##########"
+echo "########## Completed bootstrapping $HOSTNAME ##########"
